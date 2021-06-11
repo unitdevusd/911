@@ -95,6 +95,7 @@ body {
 
 .btn--primary {
   color: #8d0019;
+  background-color: #fff;
 }
 
 .btn__text,
@@ -210,6 +211,7 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  background: #fff;
 }
 
 .trailer .play-icon {
