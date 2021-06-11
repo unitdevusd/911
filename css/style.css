@@ -9,20 +9,34 @@ body {
   font-weight: normal;
   background-color: #14131a;
   color: #fff;
-  background: url(../img/bg.png) #14131a no-repeat center;
+  background: url(../img/bg.jpg) #14131a no-repeat center;
   background-size: 100% 1340px;
   overflow-x: hidden;
 }
 
 .container {
   max-width: 1140px;
+  width: 90%;
   margin: auto;
 }
+.container img {
+  max-width: 100%;
+}
 
+.venom {
+  margin-right: -10px;
+  max-width: 728px;
+  width: 50%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
 .header {
   display: flex;
   padding-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 10%;
   align-items: center;
 }
 .header__logo__link {
@@ -44,15 +58,16 @@ body {
 }
 .film__data {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 4%;
 
   font-size: 24px;
   line-height: 28px;
 
   color: rgba(255, 255, 255, 0.8);
 }
-.film_logo {
-  margin-bottom: 40px;
+.film__logo {
+  margin-bottom: 5%;
+  width: 90%;
 }
 
 .film__description {
@@ -64,7 +79,7 @@ body {
 
 .btn-group {
   display: flex;
-  margin-top: 70px;
+  margin-top: 5%;
 }
 
 .btn {
@@ -91,17 +106,10 @@ body {
   margin-right: 10px;
 }
 
-.venom {
-  margin-right: -10px;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
 .blood {
   margin-right: -1px;
-
+  width: 70%;
+  max-width: 1024px;
   position: absolute;
   top: 0;
   right: 0;
@@ -209,4 +217,172 @@ body {
 }
 .creators .content-subtitle {
   margin-bottom: 10px;
+}
+
+.menu__btn {
+  display: none;
+  border: none;
+  background: inherit;
+}
+.menu-close__btn {
+  display: none;
+}
+.menu__text {
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+  margin-right: 10px;
+}
+.menu__icon {
+  width: 24px;
+  height: auto;
+}
+
+/* Медиа запросы*/
+
+@media (max-width: 1024px) {
+  .about-film {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-film__text {
+    margin-bottom: 3%;
+  }
+  .about-film__text,
+  .about-film__poster {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blood {
+    display: none;
+  }
+  .venom {
+    top: 15%;
+  }
+  .about-film__poster {
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  .creators {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    background: #14131a;
+  }
+  .venom {
+    margin-right: -20px;
+  }
+  .nav__list {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.2s linear;
+  }
+  .nav__list__item {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  .nav__list__link {
+    color: #14131a;
+    padding-right: 0;
+  }
+  .menu__btn {
+    display: flex;
+    margin-left: auto;
+
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .menu-close__btn {
+    position: fixed;
+    opacity: 0;
+    right: 25px;
+    top: 65px;
+    border: none;
+    background: #fff;
+    display: flex;
+    margin-left: auto;
+
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    z-index: 10;
+    transform: translateX(300%);
+    transition: transform 0.2s linear;
+    transition-delay: 0.4s;
+  }
+
+  .menu__text {
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  .menu-close__text {
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-right: 10px;
+  }
+  .menu__icon {
+    width: 24px;
+    height: auto;
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .film__text {
+    text-align: center;
+  }
+  .film__data {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .film__description {
+    margin: auto;
+    max-width: 90%;
+  }
+  .film__logo {
+    margin-bottom: 15%;
+  }
+  .trailer {
+    max-width: 350px;
+    width: 100%;
+  }
+  .starring__list {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+  }
+  .is-active {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

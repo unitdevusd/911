@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Веном</title>
@@ -13,9 +12,16 @@
   <div class="container">
     <header class="header">
       <a href="/" class="header__logo"><img width="46" height="71" src="img/logo.png" alt="logo" class="header__logo__link"></a>
-      
+      <button class="menu__btn">
+        <span class="menu__text">Меню</span>
+        <img src="img/menu.svg" alt="icon: burger menu" class="menu__icon">
+      </button>
+      <button class="menu-close__btn">
+        <span class="menu-close__text">Закрыть</span>
+        <img src="img/arrow.svg" alt="icon: close menu" class="menu-close__icon">
+      </button>
       <nav class="nav">
-        <ul class="nav__list">
+               <ul class="nav__list">
           <li class="nav__list__item"><a href="about.html" class="nav__list__link">о фильме</a></li>
           <li class="nav__list__item"><a href="#" class="nav__list__link">трейлер</a></li>
           <li class="nav__list__item"><a href="#" class="nav__list__link">актеры</a></li>
@@ -26,7 +32,7 @@
     <section class="film">
       <div class="film__text">
         <span class="film__data">16 сентября 2021</span>
-        <img class="film_logo" src="img/Venom2.png" alt="Веном">  
+        <img class="film__logo" src="img/Venom2.svg" alt="Веном">  
         <p class="film__description">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
       </div>
       <div class="btn-group">
@@ -44,6 +50,6 @@
   </div>
   <img src="img/venom1.png" alt="Веном" class="venom">
   <img src="img/blood.png" alt="" class="blood">
-  
+  <script src="js/main.js"></script>
 </body>
 </html>
