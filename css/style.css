@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  background-color: #14131a;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  padding-top: 40px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+.header__logo__link {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list__link {
+  padding-right: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.film__data {
+  display: block;
+  margin-bottom: 38px;
+
+  font-size: 24px;
+  line-height: 28px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.film_logo {
+  margin-bottom: 40px;
+}
+
+.film__description {
+  max-width: 423px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 70px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #8d0019;
+}
+
+.btn__text,
+.btn__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn__icon {
+  margin-right: 10px;
+}
+
+.venom {
+  margin-right: -10px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.blood {
+  margin-right: -1px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -2;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.about-film {
+  display: flex;
+}
+
+.about-film__text,
+.about-film__poster {
+  width: 50%;
+}
+.about-film__heading {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.starring {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.starring__list {
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+
+  max-width: 312px;
+  list-style: none;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  max-width: 350px;
+}
+.starring__list__item {
+  line-height: 1.5;
+}
+
+.trailer {
+  display: block;
+}
+
+.about-film__poster {
+  display: flex;
+}
+.creators {
+  margin-left: 30px;
+}
+.poster {
+  border-radius: 10px;
+}
+
+.content-subtitle {
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.list__item {
+  line-height: 1.5;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.trailer {
+  margin-top: 33px;
+  width: 356px;
+  height: 205px;
+  background: url(../img/trailer-cover.jpg) no-repeat center/contain;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trailer .play {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.trailer .play-icon {
+  transform: translate(1px, 2px);
+}
