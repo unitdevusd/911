@@ -212,10 +212,16 @@ body {
   border-radius: 50%;
   cursor: pointer;
   background: #fff;
+  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .trailer .play-icon {
-  transform: translate(1px, 2px);
+  transform: translate(1px, 0px);
 }
 .creators .content-subtitle {
   margin-bottom: 10px;
