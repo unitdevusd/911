@@ -23,7 +23,7 @@ body {
   max-width: 100%;
 }
 
-.venom {
+.baby-plant {
   margin-right: -10px;
   max-width: 728px;
   width: 50%;
@@ -107,7 +107,7 @@ body {
   margin-right: 10px;
 }
 
-.blood {
+.mud {
   margin-right: -1px;
   width: 70%;
   max-width: 1024px;
@@ -264,10 +264,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .blood {
+  .mud {
     display: none;
   }
-  .venom {
+  .baby-plant {
     top: 15%;
   }
   .about-film__poster {
@@ -282,7 +282,7 @@ body {
   body {
     background: #14131a;
   }
-  .venom {
+  .baby-plant {
     margin-right: -20px;
   }
   .nav__list {
